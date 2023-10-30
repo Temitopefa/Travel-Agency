@@ -11,6 +11,12 @@ export default {
       }
     },
   },
+  purge: {
+    options: {
+      // Whitelist classes that are not recognized
+      safelist: ['justify-start', 'justify-end'],
+    },
+  },
   plugins: [],
 }
 
