@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+
+  --primary-font: 'Poppins', sans-serif;
+}
+
+/* removes scrollbar */
+::-webkit-scrollbar {
+	width: 0px;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: '#fff';
+	font-family: var(--primary-font);
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
