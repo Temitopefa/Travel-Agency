@@ -5,7 +5,7 @@ const Resort: React.FC = () => {
   return (
     <>
       <div className="h-[120rem] w-screen mt-20 p-20">
-        <div className="h-[1600px] flex gap-10 justify-center">
+        <div className="h-[1650px] flex gap-10 justify-center">
           <div className="flex flex-col gap-4 justify-end">
             <div className="h-[200px] w-[550px] flex ml-[-3rem]">
               <p className="text-black text-5xl font-semibold not-italic leading-relaxed">
