@@ -1,5 +1,5 @@
 import React from "react";
-import { ocean, sea, snow, winter } from "../assets/img";
+import { ocean1, img1, snow1, winter1 } from "../assets/img";
 
 const Resort: React.FC = () => {
   return (
@@ -14,22 +14,36 @@ const Resort: React.FC = () => {
               </p>
             </div>
             <img
-              src={winter}
-              className="w-full h-full object-cover w-[484px] h-[711px]"
+              src={img1}
+              className="w-full object-cover w-[484px] h-[711px] rounded-2xl shadow-lg"
             />
+
             <img
-              src={ocean}
-              className="w-full h-full object-cover w-[484px] h-[711px]"
+              src={ocean1}
+              className="w-full object-cover w-[484px] h-[711px] rounded-2xl shadow-lg"
             />
           </div>
           <div className="flex flex-col gap-4 justify-start">
+            <div className="flex flex-col relative items-center justify-end">
+              <img
+                src={winter1}
+                className=" w-full object-cover w-[484px] h-[711px] rounded-2xl shadow-lg"
+              />
+              <div className="absolute flex flex-col gap-8 mb-14">
+                <p className="text-2xl font-semibold not-italic leading-normal text-white">
+                  Winter landscape Chalet
+                </p>
+                <p className="text-slate-300 text-lg not-italic font-medium leading-normal">
+                  Cambodia
+                </p>
+                <button className="w-[436px] h-[64px] text-base font-semibold not-italic leading-normal p-8 text-white bg-[#3E86F5] flex items-center justify-center rounded-xl	">
+                  Book Now
+                </button>
+              </div>
+            </div>
             <img
-              src={sea}
-              className="w-full h-full object-cover w-[484px] h-[711px]"
-            />
-            <img
-              src={snow}
-              className="w-full h-full object-cover w-[484px] h-[711px]"
+              src={snow1}
+              className="w-full object-cover w-[484px] h-[711px] rounded-2xl shadow-lg"
             />
           </div>
         </div>

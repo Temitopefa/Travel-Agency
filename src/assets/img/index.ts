@@ -15,14 +15,15 @@ import map2 from "./map2.webp"
 import fuji from "./fuji.jpg"
 import resort from "./resort.jpg"
 import lake from "./lake.jpg"
-import ocean from "./ocean.png"
+import ocean1 from "./ocean1.jpg"
 import sea from "./sea.png"
-import snow from "./snow.png"
-import winter from "./winter.png"
+import snow1 from "./snow1.png"
+import winter1 from "./winter1.png"
 import frame from "./frame.jpg"
 import facebook from "./facebook.svg"
 import instagram from "./instagram.svg"
 import twitter from "./twitter.svg"
+import img1 from "./img1.png"
 
 export {
     mountain,
@@ -42,10 +43,11 @@ export {
     fuji,
     resort,
     lake,
-    ocean,
-    winter,
+    ocean1,
+    winter1,
+    img1,
     sea,
-    snow,
+    snow1,
     frame,
     facebook,
     instagram,
