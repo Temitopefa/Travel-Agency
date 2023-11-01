@@ -4,7 +4,7 @@ import { ellipse, facebook, flight, instagram, twitter } from "../assets/img";
 const Footer: React.FC = () => {
   return (
     <div className="flex flex-col h-[500px] w-screen bg-white">
-      <div className="flex flex-row justify-between p-32 w-full">
+      <div className="flex flex-col md:flex-row justify-between p-5 md:p-32 w-full gap-4">
         <div className="flex flex-col justify-start gap-4">
           <div className="flex items-center relative">
             <img src={ellipse} className="absolute filter brightness-0" />
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-row items-center justify-around w-[592px] gap-4">
+        <div className="flex flex-row md:flex-row items-center flex-wrap justify-between md:justify-around w-[70%] md:w-[592px] gap-8 md:gap-4">
             <div className="flex flex-col justity-start gap-4 ">
                 <p className="text-sm font-normal not-italic racking-widest leading-normal text-[#3E86F5]">COMPANY</p>
                 <p className="text-sm font-normal not-italic racking-wide leading-normal text-black">About</p>
@@ -50,10 +50,10 @@ const Footer: React.FC = () => {
             </div>
         </div>
       </div>
-      <div className="flex flex-row justify-between p-32 w-full">
+      <div className="md:flex flex-row justify-between p-3 md:p-32 w-screen md:w-full">
         <p className="text-base font-medium not-italic leading-8 text-slate-400">© 2022 Arctic Travels - All right reserved.</p>
         <div className="flex flex-row items-center justify-start mr-40 w-[370px]">
-        <div className="flex flex-row justify-start gap-4 ">
+        <div className="hidden md:flex flex-row justify-start gap-4 ">
             <p className="text-xs not-italic font-medium leading-6 text-slate-400">Privacy Policy</p>
             <p className="text-xs not-italic font-medium leading-6 text-slate-400">Terms of Use</p>
         </div>

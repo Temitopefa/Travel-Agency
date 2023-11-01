@@ -23,6 +23,8 @@ import frame from "./frame.jpg"
 import facebook from "./facebook.svg"
 import instagram from "./instagram.svg"
 import twitter from "./twitter.svg"
+import bar from "./bar.svg"
+import xcircle from "./xcircle.svg"
 import img1 from "./img1.png"
 
 export {
@@ -52,4 +54,6 @@ export {
     facebook,
     instagram,
     twitter,
+    bar,
+    xcircle,
 }

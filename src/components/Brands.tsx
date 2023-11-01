@@ -21,7 +21,7 @@ const IMG = [
 ]
 const Brands:React.FC = () => {
   return (
-    <div className='flex flex-row items-center justify-evenly bg-[#F8F9FC] h-[400px]'>
+    <div className='flex flex-row items-center justify-evenly mt-52 md:mt-0 bg-[#F8F9FC] h-[400px]'>
         {IMG.map((items, index) => {
             return(
                 <div key={index}>
