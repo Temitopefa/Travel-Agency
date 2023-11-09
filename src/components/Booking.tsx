@@ -1,5 +1,6 @@
 import React from "react";
 import { calendar, down, flight, location, user } from "../assets/img";
+import { motion } from "framer-motion";
 
 const Booking: React.FC = () => {
   return (
@@ -28,7 +29,7 @@ const Booking: React.FC = () => {
           </div>
           <div className="flex flex-row items-center justify-between px-4 md:px-0 md:justify-center gap-4 w-full">
             <p className="text-black text-lg font-medium leading-normal not-italic">
-                4 Persons
+              4 Persons
             </p>
             <img src={down} className="w-[24px] h-[24px] text-[#666666]" />
           </div>
@@ -42,7 +43,7 @@ const Booking: React.FC = () => {
           </div>
           <div className="flex flex-row items-center justify-between px-4 md:px-0 md:justify-center gap-4 w-full">
             <p className="text-black text-lg font-medium leading-normal not-italic">
-                12 January 2022
+              12 January 2022
             </p>
             <img src={down} className="w-[24px] h-[24px] text-[#666666]" />
           </div>
@@ -56,16 +57,25 @@ const Booking: React.FC = () => {
           </div>
           <div className="flex flex-row items-center justify-between px-4 md:px-0 md:justify-center gap-4 w-full">
             <p className="text-black text-lg font-medium leading-normal not-italic">
-                18 January 2022
+              18 January 2022
             </p>
             <img src={down} className="w-[24px] h-[24px] text-[#666666]" />
           </div>
         </div>
         <div className="w-full md:w-[213px] h-[64px]">
-            <button className="flex flex-row gap-4 items-center justify-center bg-[#3E86F5] w-full h-[64px] p-10 rounded-xl ">
-                <p className="text-white text-base font-semibold not-italic leading-normal">Book Trip</p>
-                <img src={flight} className="filter brightness-0 invert rotate-45" />
-            </button>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="flex flex-row gap-4 items-center justify-center bg-[#3E86F5] w-full h-[64px] p-10 rounded-xl "
+          >
+            <p className="text-white text-base font-semibold not-italic leading-normal">
+              Book Trip
+            </p>
+            <img
+              src={flight}
+              className="filter brightness-0 invert rotate-45"
+            />
+          </motion.button>
         </div>
       </div>
     </div>

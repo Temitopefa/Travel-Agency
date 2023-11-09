@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { bar, ellipse, flight, xcircle } from "../assets/img";
+import { motion } from "framer-motion";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,9 +42,12 @@ const Navbar: React.FC = () => {
             <h4>About Us</h4>
             <h4>Support</h4>
             <h4>FAQ</h4>
-            <button className="md:static text-blue-400 bg-white rounded-lg items-center text-sm not-italic font-semibold leading-normal w-[151px] h-[48px] p-3.5">
+            <motion.button 
+              whileHover={{ scale:1.1 }}
+              whileTap={{ scale:0.9 }}
+              className="md:static text-blue-400 bg-white rounded-lg items-center text-sm not-italic font-semibold leading-normal w-[151px] h-[48px] p-3.5">
               Sign Up
-            </button>
+            </motion.button>
           </div>
         ) : (
           <>
@@ -53,9 +57,12 @@ const Navbar: React.FC = () => {
               <h4>FAQ</h4>
             </div>
             <div className="hidden md:flex">
-              <button className="md:static text-blue-400 bg-white rounded-lg items-center text-sm not-italic font-semibold leading-normal w-[151px] h-[48px] p-3.5">
+              <motion.button
+                whileHover={{ scale:1.1 }}
+                whileTap={{ scale:0.9 }}
+                className="md:static text-blue-400 bg-white rounded-lg items-center text-sm not-italic font-semibold leading-normal w-[151px] h-[48px] p-3.5">
                 Sign Up
-              </button>
+              </motion.button>
             </div>
           </>
         )}

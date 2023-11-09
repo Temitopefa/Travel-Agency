@@ -1,5 +1,6 @@
 import React from "react";
 import { frame } from "../assets/img";
+import { motion } from "framer-motion";
 
 const View: React.FC = () => {
   return (
@@ -16,9 +17,12 @@ const View: React.FC = () => {
               View Passes We’ve Made
               <br /> Available For You
             </p>
-            <button className="flex w-[215px] md:w-[285px] h-[64px] md:h-[72px] p-4 justify-center items-center text-white text-sm font-semibold rounded-xl bg-blue-500">
+            <motion.button 
+              whileHover={{ scale:1.1 }}
+              whileTap={{ scale:0.9 }}
+              className="flex w-[215px] md:w-[285px] h-[64px] md:h-[72px] p-4 justify-center items-center text-white text-sm font-semibold rounded-xl bg-blue-500">
               view passes
-            </button>
+            </motion.button>
           </div>
         </div>
       </div>
